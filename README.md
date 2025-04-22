@@ -2,15 +2,10 @@
 
 **Pronúncia:** *Graph-Queue-Well*
 
-### 🎤 Como se pronuncia "GraphQL"
-
-**GraphQL**  
-/\u02c8\u0261r\u00e6f.kju\u02d0.\u02c8w\u025bl/  
-**[Graph-Queue-Well]**  
-🔴 *Como se pronuncia:* **Graph** (como em "gráfico") + **Queue** (como "fila" em inglês) + **Well** (como "bem")  
+🔴 **Graph** (como em "gráfico") + **Queue** (como "fila" em inglês) + **Well** (como "bem")  
 
 🗣️ Exemplo de uso:  
-> "Estamos desenvolvendo uma API usando **Graph-Queue-Well** para consultas flexíveis de dados."
+> "API usando **Graph-Queue-Well** para consultas flexíveis de dados."
 
 ---
 
