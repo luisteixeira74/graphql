@@ -1,19 +1,25 @@
-# graphql
+# graphQL (pronuncia graphQueueWell)
 
-lib para criar uma estrutura pronta para GraphQL
+lib usada para criar uma estrutura GraphQL
 
 https://gqlgen.com/
 
+---
 
-para baixar uma estrutura
+## Instrução do próprio gqlgen para iniciar o server
 
-go run github.com/99designs/gqlgen init
+- Initialise gqlgen config and generate models
+> go run github.com/99designs/gqlgen init
+> go mod tidy
+
+- Start the graphql server
+> go run server.go
 
 Exec "go run ./server.go" to start GraphQL server
-
 Gerar o schema
-
 go run github.com/99designs/gqlgen generate
+
+---
 
 > Esse projeto usa Query/SQL manual (sem ORM) e necessita criar as tabelas
 
@@ -21,7 +27,9 @@ go run github.com/99designs/gqlgen generate
 
 sqlite3 data.db
 
-# Rodar os scripts
+## Rodar os scripts
 
 CREATE TABLE categories (id string, name string, description string)
 CREATE TABLE courses (id string, name string, description string, category_id string)
+
+---
