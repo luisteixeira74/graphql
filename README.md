@@ -1,35 +1,68 @@
-# graphQL (pronuncia graphQueueWell)
+## 📦 GraphQL com Go usando gqlgen
 
-lib usada para criar uma estrutura GraphQL
+**Pronúncia:** *Graph-Queue-Well*
 
-https://gqlgen.com/
+### 🔗 Biblioteca utilizada
+
+- [gqlgen](https://gqlgen.com/) — Biblioteca para criação de APIs GraphQL em Go.
 
 ---
 
-## Instrução do próprio gqlgen para iniciar o server
+### 🚀 Instruções para iniciar o servidor GraphQL
 
-- Initialise gqlgen config and generate models
-> go run github.com/99designs/gqlgen init
-> go mod tidy
+**1. Inicializar o projeto com gqlgen:**
 
-- Start the graphql server
-> go run server.go
+```bash
+go run github.com/99designs/gqlgen init
+go mod tidy
+```
 
-Exec "go run ./server.go" to start GraphQL server
-Gerar o schema
+**2. Gerar o schema (quando alterar os arquivos **``**):**
+
+```bash
 go run github.com/99designs/gqlgen generate
+```
+
+**3. Iniciar o servidor:**
+
+```bash
+go run server.go
+```
+
+ou
+
+```bash
+go run ./server.go
+```
 
 ---
 
-> Esse projeto usa Query/SQL manual (sem ORM) e necessita criar as tabelas
+### 💃 Banco de Dados
 
-# Acessar o DB
+Este projeto **não utiliza ORM**. As queries SQL são feitas manualmente. É necessário criar as tabelas antes da execução.
 
+**Acessar o banco SQLite:**
+
+```bash
 sqlite3 data.db
+```
 
-## Rodar os scripts
+**Criar as tabelas:**
 
-CREATE TABLE categories (id string, name string, description string)
-CREATE TABLE courses (id string, name string, description string, category_id string)
+```sql
+CREATE TABLE categories (
+  id TEXT,
+  name TEXT,
+  description TEXT
+);
+
+CREATE TABLE courses (
+  id TEXT,
+  name TEXT,
+  description TEXT,
+  category_id TEXT
+);
+```
 
 ---
+
